@@ -1,0 +1,5 @@
+Theme name:    MatthewPalmer
+Description:   blog style for my blog
+Author name:   matt palmer
+Author site:   http://palmer.im
+

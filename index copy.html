@@ -1,0 +1,41 @@
+<html>
+<head>
+
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="myjquery.zrssfeed.min.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+<div class = "container">
+
+		<div class = "instagramarea">
+			<span class = "recentarticles instagramsnip">LATEST <em><a href="http://instagram.com/matthewpalmer95">INSTAGRAM</a></em></span>
+		<div id="test"></div>
+		
+<script type="text/javascript">
+$(document).ready(function () {
+    $('#test').rssfeed('http://instagram.heroku.com/users/229211271.atom',{
+        snippet: false,
+        limit: 3,
+    }, function(e) {
+        $(e).find('div.rssBody').vTicker({
+            showItems: 1,
+           
+        });
+    });
+});
+</script>
+</div>
+<script>
+	$(document).ready(function() {
+
+    $("#test").addClass("gramlink");
+    $('.gramlink').wrap('<a href="http://instagram.com/matthewpalmer95"></a>');
+
+});
+
+</script>
+</body>
+</html>
